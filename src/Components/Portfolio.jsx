@@ -31,28 +31,28 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Shopping Cart 🎉",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Crafted a user-friendly and responsive e-commerce website. By undertaking this project, I aim to solidify my understanding of PHP development while honing my skills in database management and web design.",
+    url: "https://github.com/Abhishek5165/Abhisheks_Shopping_Cart",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Abhishek's Gallery 📷",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Crafted an intuitive image gallery application prioritizing efficient search and sorting functionalities. Seamlessly integrated a swift download feature for quick access and saving of images.",
+    url: "https://github.com/Abhishek5165/Abhisheks_gallery",
   },
   {
     title: "My Resume Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created from Microsoft's resume workshop and deployed to Vercel. Includes my experience and design abilities.",
+    url: "https://github.com/Abhishek5165/My-Resume",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Killer_Net (NetFlix Clone)",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "This is a Netflix clone developed as part of a personal project. The project was built using HTML, Tailwind CSS & JavaScript.",
+    url: "https://github.com/Abhishek5165/Killer_Net",
   },
 ];
 
@@ -61,10 +61,10 @@ const Portfolio = () => {
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
+        <div style={{ maxWidth: "40%", alignSelf: "center"}} className="Abhi">
+          <img className="img"
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "150%", width: "100%", objectFit: "contain" }}
             alt={imageAltText}
           />
         </div>
@@ -72,7 +72,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                <h3 className="project_title" style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
             </div>

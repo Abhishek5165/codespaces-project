@@ -24,8 +24,8 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Abhishek Verma",
-  title: "Full-Stack Developer",
+  name: "Abhishek",
+  title: "A passionate Full-Stack developer from India.",
   email: "abhishek1310verma@gmail.com",
   gitHub: "Abhishek5165",
   instagram: "abhishek_v13",
@@ -34,7 +34,7 @@ const siteProps = {
 };
 
 const primaryColor = "#379777";
-const secondaryColor = "#FDFFE2";
+const secondaryColor = "#ffffff";
 
 const App = () => {
   return (

@@ -12,19 +12,20 @@ const Header = () => {
       style={{
         position: "fixed",
         display: "flex",
+        color:"#ffffff",
         justifyContent: "center",
         gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
+        background: "#E2DFD0",
         padding: "1rem",
         top: 0,
         width: "100%",
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#footer">Contact</a>
+      <a className="nav" href="#home">Home</a>
+      <a className="nav" href="#about">About</a>
+      <a className="nav" href="#portfolio">Portfolio</a>
+      <a className="nav" href="#footer">Contact</a>
     </div>
   );
 };

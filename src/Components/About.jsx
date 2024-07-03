@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -24,19 +24,22 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "👋 Hello I'm Abhishek ! A passionate web developer from India.📕I am currently pursuing my B.Tech from Indian Institute of Information Technology Bhagalpur, Bihar.I love to work in groups where everyone can voice their opinions and ideas.🏏I like to play chess and cricket.🌱 I’m currently learning Django, Node JS";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
+
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "HTML, CSS, JavaScript",
+  "SQL, DSA, Git-Github",
+  "Web Design",
+  "React-JS, Node-Js",
+  "Time Management",
+  "PHP, Python, Express-Js",
+  "Mongo-DB, My-Sql",
+  "Vercel, Git-Bash",
 ];
 
 /**
@@ -53,16 +56,18 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "#FEFAF6",
           width: "50%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
+          borderRadius:"10px",
         }}
       >
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
+        <h2 className="skills">Skills</h2>
         <ul
           style={{
             textAlign: "left",
