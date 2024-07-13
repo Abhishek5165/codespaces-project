@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "git+https://github.com/Abhishek5165/codespaces-project.git"
   },
   "type": "module",
   "author": "Microsoft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/Abhishek5165/codespaces-project/issues"
   },
   "dependencies": {
     "braces": "^3.0.3",
