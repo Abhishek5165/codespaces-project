@@ -7,7 +7,7 @@
   "scripts": {
     "start": "rm -rf .parcel-cache && parcel",
     "build": "rm -rf .parcel-cache && parcel build",
-    "build-gh": "parcel build --public-url 'https://{Abhishek5165}.github.io/{codespaces-project}'",
+    "build-gh": "parcel build --public-url 'https://Abhishek5165.github.io/codespaces-project'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
