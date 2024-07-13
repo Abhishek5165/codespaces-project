@@ -25,30 +25,10 @@ import twitterIcon from "../images/socials/twitter.svg";
  */
 
 const Footer = (props) => {
-  const {
-    devDotTo,
-    email,
-    gitHub,
-    instagram,
-    linkedIn,
-    name,
-    primaryColor,
-    twitter,
-  } = props;
+  const { devDotTo, email, gitHub, instagram, linkedIn, name, primaryColor, twitter } = props;
 
   return (
-    <div
-      id="footer"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "5rem 0 3rem",
-        backgroundColor: primaryColor,
-        width: "100vw",
-      }}
-    >
+    <div id="footer">
       <div
         style={{
           display: "flex",
@@ -117,7 +97,6 @@ Footer.propTypes = {
   name: PropTypes.string.isRequired,
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
-
 };
 
 export default Footer;

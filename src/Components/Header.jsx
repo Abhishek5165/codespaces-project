@@ -8,15 +8,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div
+    <div id="navbar"
       style={{
         position: "fixed",
         display: "flex",
+        paddingBottom:"2px",
+        paddingTop:"18px",
         color:"#ffffff",
         justifyContent: "center",
         gap: "2rem",
         background: "#E2DFD0",
-        padding: "1rem",
         top: 0,
         width: "100%",
         zIndex: 10,
@@ -26,6 +27,10 @@ const Header = () => {
       <a className="nav" href="#about">About</a>
       <a className="nav" href="#portfolio">Portfolio</a>
       <a className="nav" href="#footer">Contact</a>
+      <a className="nav" href="#footer">Profiles</a>
+      <div className="Port">
+      <a href="https://secret-lemon-xi.vercel.app/" target="_blank">🥷🏼</a>
+      </div>
     </div>
   );
 };

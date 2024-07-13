@@ -17,6 +17,7 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/motion-background.jpg";
+import myImage from '../images/image.png';
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,7 +25,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "👋 Hello I'm Abhishek ! A passionate web developer from India.📕I am currently pursuing my B.Tech from Indian Institute of Information Technology Bhagalpur, Bihar.I love to work in groups where everyone can voice their opinions and ideas.🏏I like to play chess and cricket.🌱 I’m currently learning Django, Node JS";
+  "👋 Hello I'm Abhishek ! A passionate web developer from India. I am currently pursuing my B.Tech from Indian Institute of Information Technology Bhagalpur, Bihar. I love to work in groups where everyone can voice their opinions and ideas. I like to play chess and cricket. I’m currently learning Django. I’m looking to collaborate on different projects on Web Development.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -33,13 +34,13 @@ const description =
 
 const skillsList = [
   "HTML, CSS, JavaScript",
-  "SQL, DSA, Git-Github",
+  "SQL, Git-Bash, Git, Github",
   "Web Design",
   "React-JS, Node-Js",
   "Time Management",
   "PHP, Python, Express-Js",
   "Mongo-DB, My-Sql",
-  "Vercel, Git-Bash",
+  "Vercel, Git-Hub Pages",
 ];
 
 /**
@@ -54,17 +55,18 @@ const About = () => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "#FEFAF6",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-          borderRadius:"10px",
-        }}
-      >
-        <h2>About Myself</h2>
+      <div className="content">
+        <header id="header">
+            <div class="top-header">
+                <div class="outer">
+                    <div class="inner"><img className="im" src={myImage} alt="Abhishek"/></div>
+                </div>
+                <div class="heading">
+                    <h1>About MySelf</h1>
+                </div>
+            </div>
+        </header>
+
         <p className="large">{description}</p>
         <hr />
         <h2 className="skills">Skills</h2>
@@ -75,6 +77,8 @@ const About = () => {
             fontSize: "1.25rem",
             margin: "2rem 3rem",
             gap: "3rem",
+            fontFamily:"Cormorant Garamond",
+            fontWeight:700,
           }}
         >
           {skillsList.map((skill) => (
@@ -82,7 +86,7 @@ const About = () => {
           ))}
         </ul>
         <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{ padding: "1rem 3rem 0",fontFamily:"Cormorant Garamond",fontWeight:600,}}>{detailOrQuote}</p>
       </div>
     </section>
   );
