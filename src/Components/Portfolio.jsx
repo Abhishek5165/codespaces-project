@@ -91,7 +91,7 @@ const Portfolio = () => {
         </div>
         <div className="two">
         <img src={icon} alt="" />
-          <h3>CodeShef</h3>
+          <h3>CodeChef</h3>
           <p><a href="https://www.codechef.com/users/abhishek_105" target="_blank">decoder_13</a></p>
           <p>2 ⭐, Highest Rating (1520)</p>
         </div>
